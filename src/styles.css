@@ -1,0 +1,369 @@
+/* ── Reset & base ─────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto; /* GSAP/ScrollTrigger manage smooth scrolling */
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #0e0e0e; /* dark behind map so transparent gaps look clean */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Map (fixed layer) ────────────────────────────────────────── */
+
+#map {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ── Scroll content (above map) ───────────────────────────────── */
+
+#scroll-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Site hero ────────────────────────────────────────────────── */
+
+.site-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+}
+
+.hero-inner {
+  padding: 2rem;
+}
+
+.hero-eyebrow {
+  margin: 0 0 0.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.hero-title {
+  margin: 0 0 0.25rem;
+  font-size: clamp(3rem, 10vw, 7rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.hero-subtitle {
+  margin: 0 0 2.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  color: rgb(255 255 255 / 0.7);
+  font-style: italic;
+}
+
+.hero-cta {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.45);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.45; }
+  50%       { opacity: 0.9; }
+}
+
+/* ── Map trigger (full viewport, transparent) ─────────────────── */
+
+.map-trigger {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8vh;
+  pointer-events: none;
+}
+
+/* ── Title card ───────────────────────────────────────────────── */
+
+.title-card {
+  text-align: center;
+  padding: 2rem 2.5rem 2.25rem;
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0),
+    rgb(0 0 0 / 0.55) 30%,
+    rgb(0 0 0 / 0.72)
+  );
+  border-radius: 0.5rem;
+  max-width: min(700px, 90vw);
+  width: 100%;
+  opacity: 0; /* GSAP fades in */
+}
+
+.day-label {
+  display: block;
+  margin: 0 0 0.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.65);
+}
+
+.chapter-title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.6rem, 5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.chapter-subtitle {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: rgb(255 255 255 / 0.7);
+  font-style: italic;
+}
+
+/* ── Narrative panel ──────────────────────────────────────────── */
+
+.narrative-panel {
+  background: #faf9f7;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 10vw, 4rem);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.narrative-panel p {
+  margin: 0 0 1.5em;
+}
+
+.narrative-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Photo panels — base ──────────────────────────────────────── */
+
+.photo-panel {
+  position: relative;
+  min-height: 100vh;
+}
+
+.photo-panel img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── hero-fullbleed ───────────────────────────────────────────── */
+
+.photo-panel.hero-fullbleed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #0e0e0e;
+}
+
+.photo-panel.hero-fullbleed img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.photo-panel.hero-fullbleed .caption {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: min(600px, 88vw);
+  padding: 0.5rem 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.78rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 0.7);
+  background: rgb(0 0 0 / 0.35);
+  border-radius: 0.25rem;
+  backdrop-filter: blur(4px);
+}
+
+/* ── centered-letterbox ───────────────────────────────────────── */
+
+.photo-panel.centered-letterbox {
+  background: #faf9f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 8vw, 6rem);
+}
+
+.photo-panel.centered-letterbox .photo-inner {
+  width: 100%;
+  max-width: 860px;
+}
+
+.photo-panel.centered-letterbox img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 0.12);
+}
+
+/* ── centered-medium ──────────────────────────────────────────── */
+
+.photo-panel.centered-medium {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 8vw, 6rem);
+}
+
+.photo-panel.centered-medium .photo-inner {
+  width: 100%;
+  max-width: 640px;
+}
+
+.photo-panel.centered-medium img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 0.1);
+}
+
+/* ── Shared caption (non-hero) ────────────────────────────────── */
+
+.photo-panel:not(.hero-fullbleed) .caption {
+  margin: 1rem 0 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.78rem;
+  color: #666;
+  line-height: 1.55;
+}
+
+/* ── split-with-text ──────────────────────────────────────────── */
+
+.photo-panel.split-with-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.split-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.split-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.split-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(2rem, 5vw, 4rem);
+}
+
+.split-text .caption {
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  color: #333;
+  line-height: 1.75;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* ── split-with-map ───────────────────────────────────────────── */
+
+.photo-panel.split-with-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  background: #faf9f7;
+}
+
+/* ── Transition spacer ────────────────────────────────────────── */
+
+.transition-spacer {
+  height: 50vh;
+  /* transparent — map visible through this gap */
+}
+
+/* ── Site footer ──────────────────────────────────────────────── */
+
+.site-footer {
+  background: #faf9f7;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.8rem;
+  color: #999;
+  letter-spacing: 0.06em;
+}
+
+/* ── Mapbox marker dots ───────────────────────────────────────── */
+
+.chapter-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #e63946;
+  color: #fff;
+  font: 600 0.7rem/1 system-ui, sans-serif;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.35);
+  cursor: default;
+}
+
+.chapter-marker:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ── Responsive ───────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .photo-panel.split-with-text,
+  .photo-panel.split-with-map {
+    grid-template-columns: 1fr;
+  }
+
+  .split-photo {
+    min-height: 60vw;
+  }
+}
+
+/* ── Reduced motion ───────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-cta {
+    animation: none;
+    opacity: 0.6;
+  }
+}

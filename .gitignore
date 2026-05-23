@@ -314,6 +314,11 @@ FakesAssemblies/
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
 node_modules/
+dist/
+
+# Original photos stay local; optimized WebPs are committed
+public/photos/source/*
+!public/photos/source/.gitkeep
 
 # Visual Studio 6 build log
 *.plg
