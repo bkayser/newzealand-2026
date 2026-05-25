@@ -7,7 +7,41 @@
     "width": 4032,
     "height": 3024,
     "format": "square",
+    "suggestedChapter": "tiritiri-matangi",
     "suggestedLayout": "centered-medium"
+  },
+  {
+    "filename": "Te-Pa-Tu-Culture-Tour-Rotorua.png.webp",
+    "timestamp": null,
+    "lat": null,
+    "lng": null,
+    "width": 1000,
+    "height": 500,
+    "format": "panorama",
+    "suggestedChapter": "te-pa-tu",
+    "suggestedLayout": "hero-fullbleed"
+  },
+  {
+    "filename": "Tiritiri-Matangi-Island-Look-Walk44-scaled.webp",
+    "timestamp": null,
+    "lat": null,
+    "lng": null,
+    "width": 1920,
+    "height": 1081,
+    "format": "landscape",
+    "suggestedChapter": "tiritiri-matangi",
+    "suggestedLayout": "centered-letterbox"
+  },
+  {
+    "filename": "sailings-call-to-action-ted-ashby.webp",
+    "timestamp": null,
+    "lat": null,
+    "lng": null,
+    "width": 1920,
+    "height": 1080,
+    "format": "landscape",
+    "suggestedChapter": "ted-ashby",
+    "suggestedLayout": "centered-letterbox"
   },
   {
     "filename": "0094b_lg.jpg",
@@ -66,7 +100,7 @@
     "height": 675,
     "format": "landscape",
     "suggestedLayout": "centered-letterbox",
-    "suggestedChapter": "ted-ashby",
+    "suggestedChapter": "arrival-auckland",
     "distanceFromChapterKm": 0.2897545658472907
   },
   {
@@ -78,7 +112,7 @@
     "height": 2036,
     "format": "panorama",
     "suggestedLayout": "hero-fullbleed",
-    "suggestedChapter": "ted-ashby",
+    "suggestedChapter": "arrival-auckland",
     "distanceFromChapterKm": 0.31297505931559616
   },
   {
@@ -90,7 +124,7 @@
     "height": 3705,
     "format": "landscape",
     "suggestedLayout": "centered-letterbox",
-    "suggestedChapter": "ted-ashby",
+    "suggestedChapter": "arrival-auckland",
     "distanceFromChapterKm": 0.1065655918283395
   },
   {
@@ -114,7 +148,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "ted-ashby",
+    "suggestedChapter": "arrival-auckland",
     "distanceFromChapterKm": 0.24201852775601468
   },
   {
@@ -138,7 +172,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "ted-ashby",
+    "suggestedChapter": "auckland-bus-tour",
     "distanceFromChapterKm": 0.37401297800732236
   },
   {
@@ -150,7 +184,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "ted-ashby",
+    "suggestedChapter": "tiritiri-matangi",
     "distanceFromChapterKm": 0.2829330327187477
   },
   {
@@ -162,7 +196,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "ted-ashby",
+    "suggestedChapter": "tiritiri-matangi",
     "distanceFromChapterKm": 0.5141618096949264
   },
   {
@@ -174,7 +208,7 @@
     "height": 1112,
     "format": "panorama",
     "suggestedLayout": "hero-fullbleed",
-    "suggestedChapter": "ted-ashby",
+    "suggestedChapter": "departure",
     "distanceFromChapterKm": 0.758304097623858
   },
   {
@@ -222,7 +256,7 @@
     "height": 1931,
     "format": "panorama",
     "suggestedLayout": "hero-fullbleed",
-    "suggestedChapter": "arrival-auckland",
+    "suggestedChapter": "drive-north",
     "distanceFromChapterKm": 7.278360399020688
   },
   {
@@ -232,6 +266,7 @@
     "lng": null,
     "width": 2560,
     "height": 915,
+    "suggestedChapter": "drive-north",
     "format": "panorama",
     "suggestedLayout": "hero-fullbleed"
   },
@@ -244,7 +279,7 @@
     "height": 4045,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "drive-north",
     "distanceFromChapterKm": 4.17120973786592
   },
   {
@@ -256,7 +291,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "drive-north",
     "distanceFromChapterKm": 4.188487507572644
   },
   {
@@ -268,7 +303,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "drive-north",
     "distanceFromChapterKm": 4.178146168805546
   },
   {
@@ -280,7 +315,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "dolphin-cruise",
     "distanceFromChapterKm": 2.622929061224961
   },
   {
@@ -304,7 +339,7 @@
     "height": 2045,
     "format": "landscape",
     "suggestedLayout": "centered-letterbox",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "dolphin-cruise",
     "distanceFromChapterKm": 4.348875722735684
   },
   {
@@ -316,7 +351,7 @@
     "height": 2175,
     "format": "panorama",
     "suggestedLayout": "hero-fullbleed",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "dolphin-cruise",
     "distanceFromChapterKm": 10.816544522497358
   },
   {
@@ -327,6 +362,7 @@
     "width": 1550,
     "height": 872,
     "format": "landscape",
+    "suggestedChapter": "dolphin-cruise",
     "suggestedLayout": "centered-letterbox"
   },
   {
@@ -350,7 +386,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "dolphin-cruise",
     "distanceFromChapterKm": 11.359126797364647
   },
   {
@@ -362,7 +398,7 @@
     "height": 3854,
     "format": "panorama",
     "suggestedLayout": "hero-fullbleed",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "dolphin-cruise",
     "distanceFromChapterKm": 11.148857072853264
   },
   {
@@ -374,7 +410,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "dolphin-cruise",
     "distanceFromChapterKm": 11.13294468057197
   },
   {
@@ -386,7 +422,7 @@
     "height": 3024,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "dolphin-cruise",
     "distanceFromChapterKm": 11.211743115219381
   },
   {
@@ -397,6 +433,7 @@
     "width": 840,
     "height": 420,
     "format": "panorama",
+    "suggestedChapter": "russell",
     "suggestedLayout": "hero-fullbleed"
   },
   {
@@ -408,7 +445,7 @@
     "height": 4284,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "russell",
+    "suggestedChapter": "drive-north",
     "distanceFromChapterKm": 4.2062965358901065
   },
   {
@@ -552,7 +589,7 @@
     "height": 2570,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "black-labyrinth",
+    "suggestedChapter": "tane-mahuta",
     "distanceFromChapterKm": 24.42008057162425
   },
   {
@@ -563,6 +600,7 @@
     "width": 4284,
     "height": 4965,
     "format": "square",
+    "suggestedChapter": "te-pa-tu",
     "suggestedLayout": "centered-medium"
   },
   {
@@ -574,7 +612,7 @@
     "height": 900,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "waikite",
+    "suggestedChapter": "te-pa-tu",
     "distanceFromChapterKm": 9.049587861777177
   },
   {
@@ -586,7 +624,7 @@
     "height": 641,
     "format": "landscape",
     "suggestedLayout": "centered-letterbox",
-    "suggestedChapter": "waikite",
+    "suggestedChapter": "te-pa-tu",
     "distanceFromChapterKm": 9.049587861777177
   },
   {
@@ -598,7 +636,7 @@
     "height": 4669,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "waikite",
+    "suggestedChapter": "te-pa-tu",
     "distanceFromChapterKm": 8.80087622689468
   },
   {
@@ -669,6 +707,7 @@
     "width": 1200,
     "height": 900,
     "format": "square",
+    "suggestedChapter": "wai-o-tapu",
     "suggestedLayout": "centered-medium"
   },
   {
@@ -679,6 +718,7 @@
     "width": 3815,
     "height": 2861,
     "format": "square",
+    "suggestedChapter": "wai-o-tapu",
     "suggestedLayout": "centered-medium"
   },
   {
@@ -749,6 +789,7 @@
     "width": 1206,
     "height": 2622,
     "format": "tall",
+    "suggestedChapter": "departure",
     "suggestedLayout": "split-with-map"
   },
   {
@@ -760,7 +801,7 @@
     "height": 3519,
     "format": "square",
     "suggestedLayout": "centered-medium",
-    "suggestedChapter": "war-memorial-museum",
+    "suggestedChapter": "departure",
     "distanceFromChapterKm": 7.1635094111902555
   }
 ]

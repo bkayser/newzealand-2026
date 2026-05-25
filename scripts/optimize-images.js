@@ -27,6 +27,7 @@ async function optimizeImage(filename) {
     const dest = join(`public/photos/${name}`, outName);
     try {
       await sharp(src)
+      .rotate()
         .resize(width, null, { withoutEnlargement: true })
         .webp({ quality: 85 })
         .toFile(dest);

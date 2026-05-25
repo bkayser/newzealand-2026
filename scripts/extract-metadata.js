@@ -53,7 +53,13 @@ function nearestChapter(lat, lng) {
 }
 
 async function processPhoto(filepath) {
-  const exif = await exifr.parse(filepath, { gps: true });
+  // EXIF is best-effort — WebP and some PNGs aren't supported by exifr.
+  let exif = null;
+  try {
+    exif = await exifr.parse(filepath, { gps: true });
+  } catch {
+    exif = null;
+  }
   const metadata = await sharp(filepath).metadata();
 
   const lat = exif?.latitude ?? null;
@@ -85,7 +91,7 @@ async function main() {
   const photos = [];
 
   for (const file of files) {
-    if (!/\.(jpg|jpeg|png|heic)$/i.test(file)) continue;
+    if (!/\.(jpg|jpeg|png|heic|webp)$/i.test(file)) continue;
     try {
       const result = await processPhoto(join(sourceDir, file));
       photos.push(result);
