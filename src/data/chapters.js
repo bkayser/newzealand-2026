@@ -213,9 +213,9 @@ export const chapters = [
     day: 'May 16',
     title: 'Heading North',
     subtitle: '',
-    location: 'SH1 corridor',
+    location: 'Paihia',
     narrative: [],
-    mapView: defaultMapView(174.45, -36.05, { zoom: 8, pitch: 30, bearing: -15 }),
+    mapView: defaultMapView(174.083, -35.283, { zoom: 8, pitch: 30, bearing: -15 }),
     mapBehavior: 'transition',
     photos: [
       {
