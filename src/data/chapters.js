@@ -36,7 +36,7 @@ export const chapters = [
       },
       {
         filename: 'IMG_0499.JPG',
-          caption: 'A few blocks from the hotel, the Auckland Ferry Terminal Building was the tallest building in Auckland when it was built in 1912.'
+          caption: 'A few blocks from the hotel, the Auckland Ferry Terminal Building was the tallest building in Auckland when it was built in 1912.',
         format: 'landscape',
         layout: 'centered-letterbox',
         alt: 'Auckland waterfront in the late afternoon',
@@ -71,7 +71,7 @@ export const chapters = [
       {
         filename: 'IMG_0505.JPG',
           caption: 'New Zealanders are the friendliest people in the world, always eager to chat or help. Visitors just pick up the vibe.  My favorite thing to do is jump into the frame with a big smile whenever I see a group photo.',
-        format: 'square',p
+        format: 'square',
         layout: 'centered-medium',
         alt: 'Auckland Viaduct Harbour at dusk',
       },
@@ -90,10 +90,11 @@ export const chapters = [
     photos: [
       {
         filename: 'IMG_0515.JPG',
-        caption: 'Today 
+
         format: 'square',
         layout: 'centered-medium',
-        alt: 'Today I take a ferry Tiritiri Matangi.  There are strict rules about what can be brought to the island.  Everyone has to check bags for critters and wash their shoes before boarding.  ',
+          caption: 'Today I take a ferry Tiritiri Matangi.  There are strict rules about what can be brought to the island.  Everyone has to check bags for critters and wash their shoes before boarding.  ',
+          alt: 'Ferry to Tiritir Matangi',
       },
       {
         filename: 'IMG_0516.JPG',
