@@ -17,7 +17,7 @@ export const chapters = [
     subtitle: '',
     location: 'Auckland CBD',
     narrative: [],
-    mapView: defaultMapView(174.7633, -36.8485, { zoom: 12 }),
+    mapView: defaultMapView(174.786, -37.01199, { zoom: 12 }),
     mapBehavior: 'transition',
     photos: [
       {
